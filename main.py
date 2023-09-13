@@ -28,6 +28,7 @@ class sort:
             self.encoded_time.append(self.alphabet_dict[int(sut[i])])
         x=''.join(self.encoded_time)
         print(x)
+        return x
     def encode_2(self,sut):
         pattern_dict = {chr(i): 53 - (i - ord('a')) for i in range(ord('a'), ord('z') + 1)}
         pattern_dict.update({chr(i): 26 - (i - ord('A')) for i in range(ord('A'), ord('Z') + 1)})
@@ -40,6 +41,7 @@ class sort:
             self.encoded_time.append(res[int(sut[i])])
         x=''.join(self.encoded_time)
         print(x)
+        return x
 
 S = sort()
 S.spiller('2')
